@@ -1,0 +1,69 @@
+ v19 obervations:     
+
+1- copy function working:     
+""" 
+Aetherix-Shell
+files $ echo Hello World! ":)"
+Hello World! :)
+files $ ls
+events.log
+files $ sd
+sh: sd: inaccessible or not found
+files $ dir
+sh: dir: inaccessible or not found
+files $ cd
+files $ 
+""" 
+
+please remove the Copy/Paste Titlebar buttons completely. thats valuable screen space, and since the selection/copy function is working, we dont need those. make sure we can use the device/system clipboard for pasting instead of a manual button.     
+
+2- the keyboard doesnt popup when tapping the screen. i have to back out, or close/reopen the app for it to pop up. tapping the terminal or TitleBar does nothing except shrink the keyboaard when i tap on Aetherix-Shell.     
+
+3- log report:     
+""" 
+Aetherix-Shell 1.0.18+19 / android 16 (sdk 36)
+session: running
+notify: enabled=true perm=true no-channel
+storage: allfiles=true read=false state=mounted
+native: ok
+--- events ---
+=1 wrote=1
+Mon Oct 12 10:31:00 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:01 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:01 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:01 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:02 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:02 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:02 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:04 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:04 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:05 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:06 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:07 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:09 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:12 CDT 2026 [input] [commit-key] enter wrote=1
+Mon Oct 12 10:31:16 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:16 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:16 CDT 2026 [input] [commit-key] enter wrote=1
+Mon Oct 12 10:31:19 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:19 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:19 CDT 2026 [input] [commit-key] enter wrote=1
+Mon Oct 12 10:31:23 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:23 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:24 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:24 CDT 2026 [input] [commit-key] enter wrote=1
+Mon Oct 12 10:31:27 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:27 CDT 2026 [input] [commit] text len=1 wrote=1
+Mon Oct 12 10:31:27 CDT 2026 [input] [commit-key] enter wrote=1
+Mon Oct 12 10:31:36 CDT 2026 [copy] select start
+Mon Oct 12 10:31:50 CDT 2026 [copy] chars=195
+Mon Oct 12 10:31:50 CDT 2026 [ime] ensure focus=true win=true acc=true
+Mon Oct 12 10:35:34 CDT 2026 [ime] ensure focus=true win=false acc=false
+
+--- last crash ---
+(no recorded crashes)
+""" 
+     
+4- the permissions bombard the user before they get to see the app. replace the Battery Optimization button with a Request Permissions button that covers all 3 permissions: notifications, storage, battery.
+     
+5- i feel like the New Session button should be on the launch screen, not the terminal screen, and that when Exit is processed, the terminal should switch back to the launch screen.
