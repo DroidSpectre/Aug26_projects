@@ -1,0 +1,94 @@
+1- are Open Terminal & New Session doing the same thing? should they be the same button depending on terminal/session state?     
+
+2- the permissions button should trigger a series of dialog boxes with Grant/Deny options for each permission. the user should be told what permission they are granting, and why the app needs it. Grant triggers system and the next permission, Deny registers no on that permission and goes to the next. Does any of this make sense? should we use a settings page that list each one w/ explanation & a switch? might make it a cleaner UI.     
+
+3- log report:     
+""" 
+Aetherix-Shell 1.0.19+20 / android 16 (sdk 36)
+session: running
+notify: enabled=true perm=true imp=3
+storage: allfiles=true read=false state=mounted
+battery: exempt=true
+native: ok
+--- events ---
+false
+Mon Oct 12 15:13:57 CDT 2026 [app] stop requested
+Mon Oct 12 15:13:57 CDT 2026 [service] onCreate
+Mon Oct 12 15:13:57 CDT 2026 [service] foreground ok
+Mon Oct 12 15:13:57 CDT 2026 [service] start
+Mon Oct 12 15:13:57 CDT 2026 [service] explicit stop
+Mon Oct 12 15:13:57 CDT 2026 [service] stopSelf (idle)
+Mon Oct 12 15:13:57 CDT 2026 [service] session stopped
+Mon Oct 12 15:15:06 CDT 2026 [pty] activity destroy (session kept)
+Mon Oct 12 15:15:06 CDT 2026 [service] onCreate
+Mon Oct 12 15:15:06 CDT 2026 [service] foreground ok
+Mon Oct 12 15:15:06 CDT 2026 [service] start
+Mon Oct 12 15:15:06 CDT 2026 [service] stopSelf (idle)
+Mon Oct 12 15:15:06 CDT 2026 [service] session stopped
+Mon Oct 12 15:31:22 CDT 2026 [app] launcher create
+Mon Oct 12 15:31:26 CDT 2026 [app] log copied
+Mon Oct 12 15:31:37 CDT 2026 [app] stop requested
+Mon Oct 12 15:31:37 CDT 2026 [service] onCreate
+Mon Oct 12 15:31:37 CDT 2026 [service] foreground ok
+Mon Oct 12 15:31:37 CDT 2026 [service] start
+Mon Oct 12 15:31:37 CDT 2026 [service] explicit stop
+Mon Oct 12 15:31:37 CDT 2026 [service] stopSelf (idle)
+Mon Oct 12 15:31:37 CDT 2026 [service] session stopped
+Mon Oct 12 15:31:49 CDT 2026 [pty] open fd=129 pid=24734
+Mon Oct 12 15:31:49 CDT 2026 [ime] ensure focus=false win=true acc=false
+Mon Oct 12 15:31:52 CDT 2026 [app] stop requested
+Mon Oct 12 15:31:52 CDT 2026 [service] onCreate
+Mon Oct 12 15:31:52 CDT 2026 [service] foreground ok
+Mon Oct 12 15:31:52 CDT 2026 [service] start
+Mon Oct 12 15:31:52 CDT 2026 [service] explicit stop
+Mon Oct 12 15:31:52 CDT 2026 [service] stopSelf (idle)
+Mon Oct 12 15:31:52 CDT 2026 [service] session stopped
+Mon Oct 12 15:32:02 CDT 2026 [app] log copied
+Mon Oct 12 15:34:14 CDT 2026 [ime] ensure focus=true win=false acc=false
+Mon Oct 12 15:34:30 CDT 2026 [app] launcher create
+Mon Oct 12 15:34:31 CDT 2026 [pty] open fd=201 pid=26217
+Mon Oct 12 15:34:31 CDT 2026 [pty] activity destroy (session kept)
+Mon Oct 12 15:34:31 CDT 2026 [ime] ensure focus=false win=true acc=false
+
+--- last crash ---
+(no recorded crashes)
+""" 
+     
+4- terminal:     
+""" 
+Aetherix-Shell
+files $ ls
+bin  events.log
+files $ sd
+files $ dir
+total 52
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Alarms
+drwxrws--x  6 media_rw media_rw  3452 2026-08-08 10:
+38 Android
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Audiobooks
+drwxrws---  4 u0_a274  media_rw  3452 2026-07-02 15:
+37 DCIM
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Documents
+drwxrws--- 20 u0_a274  media_rw 20480 2026-10-12 14:
+34 Download
+drwxrws---  3 u0_a274  media_rw  3452 2026-06-30 17:
+57 Movies
+drwxrwxr-x  4 media_rw media_rw  3452 2026-06-30 17:
+57 Music
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Notifications
+drwxrws---  6 u0_a274  media_rw  3452 2026-07-14 16:
+56 Pictures
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Podcasts
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Recordings
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Ringtones
+files $ cd
+""" 
+     
+5- 
