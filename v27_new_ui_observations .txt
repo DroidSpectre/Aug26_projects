@@ -1,0 +1,95 @@
+1- clearing my notifications cleared the app notification. it didnt come back until i closed and reopened the session.      
+
+2- terminal:     
+""" 
+Aetherix-Shell
+files $ ls
+bin  events.log
+files $ dir
+total 7
+drwx------ 2 u0_a391 u0_a391 3452 2026-10-14 08:34 b
+in
+-rw------- 1 u0_a391 u0_a391 1117 2026-10-14 08:34 e
+vents.log
+files $ sd
+files $ dir
+total 52
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Alarms
+drwxrws--x  6 media_rw media_rw  3452 2026-08-08 10:
+38 Android
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Audiobooks
+drwxrws---  4 u0_a274  media_rw  3452 2026-07-02 15:
+37 DCIM
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Documents
+drwxrws--- 20 u0_a274  media_rw 20480 2026-10-14 08:
+27 Download
+drwxrws---  3 u0_a274  media_rw  3452 2026-06-30 17:
+57 Movies
+drwxrwxr-x  4 media_rw media_rw  3452 2026-06-30 17:
+57 Music
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Notifications
+drwxrws---  6 u0_a274  media_rw  3452 2026-07-14 16:
+56 Pictures
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Podcasts
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Recordings
+drwxrws---  2 u0_a274  media_rw  3452 2026-06-30 17:
+57 Ringtones
+files $ echo DONE
+DONE
+files $ 
+""" 
+
+3- log report:     
+""" 
+Aetherix-Shell 1.0.26+27 / android 16 (sdk 36)
+session: running
+notify: enabled=true perm=true imp=3
+storage: allfiles=true read=false state=mounted
+battery: exempt=true
+native: ok
+--- events ---
+2026 [ime] ensure focus=false win=true acc=false
+Wed Oct 14 08:34:05 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:06 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:06 CDT 2026 [input] [commit-key] enter wrote=1
+Wed Oct 14 08:34:10 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:10 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:11 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:11 CDT 2026 [input] [commit-key] enter wrote=1
+Wed Oct 14 08:34:13 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:14 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:16 CDT 2026 [input] [commit-key] enter wrote=1
+Wed Oct 14 08:34:18 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:18 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:19 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:34:20 CDT 2026 [input] [commit-key] enter wrote=1
+Wed Oct 14 08:49:04 CDT 2026 [ime] ensure focus=true win=false acc=false
+Wed Oct 14 08:49:09 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:10 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:10 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:10 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:10 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:13 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:13 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:14 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:14 CDT 2026 [input] [commit] text len=1 wrote=1
+Wed Oct 14 08:49:14 CDT 2026 [input] [commit-key] enter wrote=1
+Wed Oct 14 08:49:19 CDT 2026 [ime] ensure focus=true win=true acc=true
+Wed Oct 14 08:49:21 CDT 2026 [pty] activity destroy (running=true)
+Wed Oct 14 08:49:23 CDT 2026 [service] start
+Wed Oct 14 08:49:23 CDT 2026 [ime] ensure focus=false win=true acc=false
+Wed Oct 14 08:49:26 CDT 2026 [pty] activity destroy (running=true)
+
+--- last crash ---
+(no recorded crashes)
+""" 
+
+4- new launch screen: https://github.com/DroidSpectre/Aug26_projects/blob/main/Screenshot_20261014_082951.jpg .     
+
+5- lots of junk noise in the terminal 'dir'. can we clean that up so it's just the names,  as this is very cluttered.
